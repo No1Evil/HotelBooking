@@ -1,5 +1,5 @@
-Is just a simple library for hotel management.
-I made it to extend my portfolio. Idk if u`ll use it.
+Is just a simple library for hotel management to
+extend my portfolio. Idk if u`ll use it.
 
 <h3 align="left"> Room creation: </h3>
 <code>IRoom room = new Room.Builder("name", "id")
@@ -9,9 +9,9 @@ I made it to extend my portfolio. Idk if u`ll use it.
       .build();
 </code>
 
-<h4> Created rooms are automatically registered in the room manager </h4>
+<h4 align="left"> Created rooms are automatically registered in the room manager </h4>
 
 (Created rooms are automatically registered in room manager)
 
-<h3> Getter for rooms: </h3>
+<h3 align="left"> Getter for rooms: </h3>
 <code> HotelBooking.getRoomManager().yourMethod(); </code>
