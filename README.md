@@ -15,3 +15,10 @@ extend my portfolio. Idk if u`ll use it.
 
 <h3 align="left"> Getter for rooms: </h3>
 <code> HotelBooking.getRoomManager().yourMethod(); </code>
+
+<h3 align="left"> Creating Room with your own variables: </h3>
+<code>public class YourClass extends AbstractRoom{}</code>
+<code>public class YourClass implements IHotel</code>
+
+<h3 align="left"> Creating new Interface for extended room: </h3>
+<code>public interface YourInterface extends IHotel</code>
