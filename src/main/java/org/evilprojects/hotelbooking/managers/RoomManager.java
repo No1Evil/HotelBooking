@@ -12,11 +12,11 @@ public class RoomManager {
     public RoomManager(){
 
     }
-    public boolean addRoom(IRoom room){
-        return rooms.add(room);
+    public void addRoom(IRoom room){
+        rooms.add(room);
     }
-    public boolean removeRoom(IRoom room){
-        return rooms.remove(room);
+    public void removeRoom(IRoom room){
+        rooms.remove(room);
     }
     public Optional<IRoom> getAnyRoom(){
         return rooms.stream().findAny();
@@ -34,5 +34,8 @@ public class RoomManager {
         List<IRoom> rooms = new ArrayList<>(this.rooms);
         rooms.removeAll(getBusyRooms());
         return rooms;
+    }
+    public Optional<IRoom> getRoomWithBeds(int bedsAmount){
+        return rooms.stream().filter(iRoom -> iRoom.getBedsNumber() == bedsAmount).findAny();
     }
 }
