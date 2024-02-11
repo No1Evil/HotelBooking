@@ -1,6 +1,6 @@
 package org.evilprojects.hotelbooking.hotel;
 
-public class Room extends AbstractRoom{
+public final class Room extends AbstractRoom{
 
     private Room(Builder builder) {
         super(builder.name, builder.id);
