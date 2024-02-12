@@ -10,9 +10,6 @@ import java.util.stream.Collectors;
 
 public class RoomManager {
     List<IRoom> rooms = new ArrayList<>();
-    public RoomManager(){
-
-    }
     public void addRoom(IRoom room){
         rooms.add(room);
     }

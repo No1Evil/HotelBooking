@@ -1,8 +1,7 @@
 package org.evilprojects.hotelbooking.hotel;
 
-import org.evilprojects.hotelbooking.consumer.Consumer;
 import org.evilprojects.hotelbooking.consumer.IConsumer;
-import org.evilprojects.hotelbooking.util.math;
+import org.evilprojects.hotelbooking.util.MathUtil;
 
 import java.util.Optional;
 
@@ -36,7 +35,7 @@ public abstract class AbstractRoom implements IRoom{
     }
     @Override
     public double getPriceWithDiscount(int percentage) {
-        return math.getDiscount(this.price, percentage);
+        return MathUtil.getDiscount(this.price, percentage);
     }
     @Override
     public final void setPrice(double price) {

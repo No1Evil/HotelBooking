@@ -1,9 +1,6 @@
 package org.evilprojects.hotelbooking.hotel;
 
 import org.evilprojects.hotelbooking.consumer.IConsumer;
-
-import java.util.Optional;
-
 public final class Room extends AbstractRoom{
 
     private Room(Builder builder) {
