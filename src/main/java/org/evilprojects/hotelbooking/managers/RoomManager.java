@@ -1,5 +1,6 @@
 package org.evilprojects.hotelbooking.managers;
 
+import org.evilprojects.hotelbooking.consumer.IConsumer;
 import org.evilprojects.hotelbooking.hotel.IRoom;
 
 import java.util.ArrayList;
@@ -34,6 +35,11 @@ public class RoomManager {
         List<IRoom> rooms = new ArrayList<>(this.rooms);
         rooms.removeAll(getBusyRooms());
         return rooms;
+    }
+    public Optional<IRoom> getRoomByConsumer(IConsumer consumer){
+        return rooms.stream().filter(iRoom ->
+                iRoom.getConsumer().isPresent() && iRoom.getConsumer().get().equals(consumer)
+        ).findAny();
     }
     public Optional<IRoom> getRoomWithBeds(int bedsAmount){
         return rooms.stream().filter(iRoom -> iRoom.getBedsNumber() == bedsAmount).findAny();
