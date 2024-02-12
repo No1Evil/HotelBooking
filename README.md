@@ -1,5 +1,6 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2b80a09630d2495585cbc185234c501e)](https://app.codacy.com/gh/No1Evil/HotelBooking/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2b80a09630d2495585cbc185234c501e)](https://app.codacy.com/gh/No1Evil/HotelBooking/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+<html>
 Is just a simple library for hotel management to
 extend my portfolio. Idk if u`ll use it.
 
@@ -36,3 +37,4 @@ extend my portfolio. Idk if u`ll use it.
 
 <h3 align="left"> Creating new Interface for advanced consumer: </h3>
 <code>public interface YourInterface extends IConsumer</code>
+</html>
